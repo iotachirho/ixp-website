@@ -24,8 +24,10 @@ const Layout: FunctionComponent = ({ children }) => {
           </Stack>
         </Container>
       </Center>
-      {children}
-      <Center>
+      <Container maxWidth="4xl" marginY={10}>
+        {children}
+      </Container>
+      <Center padding={10}>
         <Stack alignItems="center">
           <Stack direction="row">
             <Link padding={2} color="gray" href="...">
