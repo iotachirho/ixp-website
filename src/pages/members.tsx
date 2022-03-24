@@ -1,8 +1,10 @@
 import {
   Center,
   Container,
+  Grid,
   Heading,
   ListItem,
+  SimpleGrid,
   Stack,
   Tag,
   Text,
@@ -41,10 +43,10 @@ const MembersPage: NextPage<MembersPageProps> = ({
       <Center>
         <Heading>Members</Heading>
       </Center>
-      <Wrap spacing={10} justify="center">
+      <SimpleGrid spacing={10} columns={{ base: 1, sm: 2, lg: 3 }}>
         {pledgeClasses.map((pledgeClass) => (
           <Stack key={uuid()}>
-            <Heading fontSize="xl">{`${pledgeClass.name} (NAC ${pledgeClass.year})`}</Heading>
+            <Heading fontSize="xl">{`${pledgeClass.name} (${pledgeClass.year})`}</Heading>
             <UnorderedList styleType="none">
               {pledgeClass.members.map((member) => (
                 <ListItem
@@ -64,7 +66,7 @@ const MembersPage: NextPage<MembersPageProps> = ({
             </UnorderedList>
           </Stack>
         ))}
-      </Wrap>
+      </SimpleGrid>
     </Stack>
   );
 };

@@ -24,7 +24,7 @@ const Layout: FunctionComponent = ({ children }) => {
           </Stack>
         </Container>
       </Center>
-      <Container maxWidth="4xl" marginY={10}>
+      <Container maxWidth="5xl" marginY={10}>
         {children}
       </Container>
       <Center padding={10}>
