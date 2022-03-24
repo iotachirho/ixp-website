@@ -30,16 +30,36 @@ const Layout: FunctionComponent = ({ children }) => {
       <Center padding={10}>
         <Stack alignItems="center">
           <Stack direction="row">
-            <Link padding={2} color="gray" href="...">
+            <Link
+              padding={2}
+              color="gray"
+              href="https://www.facebook.com/ixptu/"
+              isExternal
+            >
               <Icon aria-label="Facebook" as={FaFacebookSquare} />
             </Link>
-            <Link padding={2} color="gray" href="...">
+            <Link
+              padding={2}
+              color="gray"
+              href="https://twitter.com/iotachirho"
+              isExternal
+            >
               <Icon aria-label="Twitter" as={FaTwitterSquare} />
             </Link>
-            <Link padding={2} color="gray" href="...">
+            <Link
+              padding={2}
+              color="gray"
+              href="https://www.instagram.com/iotachirho/"
+              isExternal
+            >
               <Icon aria-label="Instagram" as={FaInstagramSquare} />
             </Link>
-            <Link padding={2} color="gray" href="...">
+            <Link
+              padding={2}
+              color="gray"
+              href="mailto:iotachirhotu@gmail.com"
+              isExternal
+            >
               <Icon aria-label="Email" as={AiTwotoneMail} />
             </Link>
           </Stack>
