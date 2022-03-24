@@ -6,9 +6,7 @@ const Home: NextPage = () => {
   return (
     <Stack spacing={10}>
       <Stack alignItems="center">
-        <Heading color="green" fontSize="4xl">
-          Iota Chi Rho
-        </Heading>
+        <Heading fontSize="4xl">Iota Chi Rho</Heading>
         <Heading fontSize="xl" color="grey">
           Brotherhood, individuality, and friendship.
         </Heading>

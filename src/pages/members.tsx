@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { GetStaticProps, NextPage } from "next";
 import { v4 as uuid } from "uuid";
+import Figure from "../components/figure";
 import {
   getExecutives,
   getPledgeClasses,
@@ -43,6 +44,14 @@ const MembersPage: NextPage<MembersPageProps> = ({
       <Center>
         <Heading>Members</Heading>
       </Center>
+      <Figure
+        src="/images/1996-group-photo.png"
+        caption="Active members of Iota Chi Rho, 1996."
+        layout="responsive"
+        objectFit="cover"
+        width={500}
+        height={300}
+      />
       <SimpleGrid spacing={10} columns={{ base: 1, sm: 2, lg: 3 }}>
         {pledgeClasses.map((pledgeClass) => (
           <Stack key={uuid()}>
