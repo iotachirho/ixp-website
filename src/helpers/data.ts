@@ -20,10 +20,6 @@ export interface PledgeClass {
   members: Member[];
 }
 
-// Macros:
-// a = member keys
-// b = member
-
 export type MembersKeys =
   | "kjGhast"
   | "joshAnaya"
@@ -214,7 +210,24 @@ export type MembersKeys =
   | "daveTimberger"
   | "wayneWalker"
   | "brianWeyant"
-  | "mattWheelock";
+  | "mattWheelock"
+  | "willFreeman"
+  | "stephenSedia"
+  | "macSowers"
+  | "alecBarnett"
+  | "alejandroCabezut"
+  | "ronDendy"
+  | "shreeDeshpande"
+  | "ryanDiller"
+  | "danielGarrick"
+  | "joshHumphries"
+  | "andrewMiner"
+  | "akilUdawala"
+  | "carlWarren"
+  | "austenYorko"
+  | "conorYoung"
+  | "marcusWhitten"
+  | "akiraKumahata";
 
 export const members: { [key in MembersKeys]: Member } = {
   kjGhast: {
@@ -1358,7 +1371,114 @@ export const members: { [key in MembersKeys]: Member } = {
     active: false,
     positions: [],
   },
+  willFreeman: {
+    firstName: "Will",
+    lastName: "Freeman",
+    active: false,
+    positions: [],
+  },
+  stephenSedia: {
+    firstName: "Stephen",
+    lastName: "Sedia",
+    active: false,
+    positions: [],
+  },
+  macSowers: {
+    firstName: "Mac",
+    lastName: "Sowers",
+    active: false,
+    positions: [],
+  },
+  alecBarnett: {
+    firstName: "Alec",
+    lastName: "Barnett",
+    active: false,
+    positions: [],
+  },
+  alejandroCabezut: {
+    firstName: "Alejandro",
+    lastName: "Cabezut",
+    active: false,
+    positions: [],
+  },
+  ronDendy: {
+    firstName: "Ron",
+    lastName: "Dendy",
+    active: false,
+    positions: [],
+  },
+  shreeDeshpande: {
+    firstName: "Shree",
+    lastName: "Deshpande",
+    active: false,
+    positions: [],
+  },
+  ryanDiller: {
+    firstName: "Ryan",
+    lastName: "Diller",
+    active: false,
+    positions: [],
+  },
+  danielGarrick: {
+    firstName: "Daniel",
+    lastName: "Garrick",
+    active: false,
+    positions: [],
+  },
+  joshHumphries: {
+    firstName: "Josh",
+    lastName: "Humphries",
+    active: false,
+    positions: [],
+  },
+  andrewMiner: {
+    firstName: "Andrew",
+    lastName: "Miner",
+    active: false,
+    positions: [],
+  },
+  akilUdawala: {
+    firstName: "Akil",
+    lastName: "Udawala",
+    active: false,
+    positions: [],
+  },
+  carlWarren: {
+    firstName: "Carl",
+    lastName: "Warren",
+    active: false,
+    positions: [],
+  },
+  austenYorko: {
+    firstName: "Austen",
+    lastName: "Yorko",
+    active: false,
+    positions: [],
+  },
+  conorYoung: {
+    firstName: "Conor",
+    lastName: "Young",
+    active: false,
+    positions: [],
+  },
+  marcusWhitten: {
+    firstName: "Marcus",
+    lastName: "Whitten",
+    active: false,
+    positions: [],
+  },
+  akiraKumahata: {
+    firstName: "Akira",
+    lastName: "Kumahata",
+    active: false,
+    positions: [],
+  },
 };
+
+/**
+ * It appears we are missing the Phi, Psi, and Alpha Beta classes. Given how the years align, it may be the case that Phi and Psi
+ * were skipped over, but it should be the case that Alpha Beta existed, as there is currently a gap at 2015.
+ */
 
 export type PledgeClassesKeys =
   | "pc2022"
@@ -1368,7 +1488,6 @@ export type PledgeClassesKeys =
   | "pc2018"
   | "pc2017"
   | "pc2016"
-  | "pc2015"
   | "pc2014"
   | "pc2013"
   | "pc2012"
@@ -1388,7 +1507,10 @@ export type PledgeClassesKeys =
   | "pc1998"
   | "pc1997"
   | "pc1996"
-  | "pc1995";
+  | "pc1995"
+  | "pc1994"
+  | "pc1993"
+  | "pc1992";
 
 export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
   pc2022: {
@@ -1467,17 +1589,42 @@ export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
     members: [
       members.daltonFlood,
       members.tylerHerron,
+      members.akiraKumahata,
       members.karlMenzel,
       members.cheyneMinto,
+      members.marcusWhitten,
     ],
-  },
-  pc2015: {
-    year: 2015,
-    name: "Chi",
-    members: [members.evanBrooks, members.alexHolmes],
   },
   pc2014: {
     year: 2014,
+    name: "Alpha Alpha",
+    members: [
+      members.alecBarnett,
+      members.alejandroCabezut,
+      members.ronDendy,
+      members.shreeDeshpande,
+      members.ryanDiller,
+      members.danielGarrick,
+      members.joshHumphries,
+      members.andrewMiner,
+      members.akilUdawala,
+      members.carlWarren,
+      members.austenYorko,
+      members.conorYoung,
+    ],
+  },
+  pc2013: {
+    year: 2013,
+    name: "Omega",
+    members: [members.willFreeman, members.stephenSedia, members.macSowers],
+  },
+  pc2012: {
+    year: 2012,
+    name: "Chi",
+    members: [members.evanBrooks, members.alexHolmes],
+  },
+  pc2011: {
+    year: 2011,
     name: "Upsilon",
     members: [
       members.kevinBritt,
@@ -1491,8 +1638,8 @@ export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
       members.stephenSissons,
     ],
   },
-  pc2013: {
-    year: 2013,
+  pc2010: {
+    year: 2010,
     name: "Tau",
     members: [
       members.wilsonDang,
@@ -1503,8 +1650,8 @@ export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
       members.judsonRose,
     ],
   },
-  pc2012: {
-    year: 2012,
+  pc2009: {
+    year: 2009,
     name: "Sigma",
     members: [
       members.davidMcDonald,
@@ -1516,13 +1663,13 @@ export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
       members.ericZipf,
     ],
   },
-  pc2011: {
-    year: 2011,
+  pc2008: {
+    year: 2008,
     name: "Rho",
     members: [members.bradSheppard, members.jeremySherby],
   },
-  pc2010: {
-    year: 2010,
+  pc2007: {
+    year: 2007,
     name: "Pi",
     members: [
       members.benBachus,
@@ -1534,13 +1681,13 @@ export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
       members.patrickSpence,
     ],
   },
-  pc2009: {
-    year: 2009,
+  pc2006: {
+    year: 2006,
     name: "Omicron",
     members: [members.graemeBaxter, members.mikeHall, members.andrewThompson],
   },
-  pc2008: {
-    year: 2008,
+  pc2005: {
+    year: 2005,
     name: "Xi",
     members: [
       members.kellanCaldwell,
@@ -1554,8 +1701,8 @@ export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
       members.bobbyWhitlow,
     ],
   },
-  pc2007: {
-    year: 2007,
+  pc2004: {
+    year: 2004,
     name: "Nu",
     members: [
       members.chrisDeFelice,
@@ -1565,8 +1712,8 @@ export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
       members.andrewWinklemann,
     ],
   },
-  pc2006: {
-    year: 2006,
+  pc2003: {
+    year: 2003,
     name: "Mu",
     members: [
       members.willClark,
@@ -1577,8 +1724,8 @@ export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
       members.bradSides,
     ],
   },
-  pc2005: {
-    year: 2005,
+  pc2002: {
+    year: 2002,
     name: "Lambda",
     members: [
       members.jasonAtkinson,
@@ -1591,13 +1738,13 @@ export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
       members.evanPounds,
     ],
   },
-  pc2004: {
-    year: 2004,
+  pc2001: {
+    year: 2001,
     name: "Lambda",
     members: [members.graysonPool, members.johnTalamantez],
   },
-  pc2003: {
-    year: 2003,
+  pc2000: {
+    year: 2000,
     name: "Iota",
     members: [
       members.johnCooper,
@@ -1607,8 +1754,8 @@ export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
       members.howardWilen,
     ],
   },
-  pc2002: {
-    year: 2002,
+  pc1999: {
+    year: 1999,
     name: "Theta",
     members: [
       members.jackBonner,
@@ -1619,8 +1766,8 @@ export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
       members.robertPate,
     ],
   },
-  pc2001: {
-    year: 2001,
+  pc1998: {
+    year: 1998,
     name: "Eta",
     members: [
       members.adamBunch,
@@ -1634,13 +1781,13 @@ export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
       members.jayRumisek,
     ],
   },
-  pc2000: {
-    year: 2000,
+  pc1997: {
+    year: 1997,
     name: "Zeta",
     members: [members.robertCowart, members.martyMiller],
   },
-  pc1999: {
-    year: 1999,
+  pc1996: {
+    year: 1996,
     name: "Epsilon",
     members: [
       members.sethGreen,
@@ -1650,8 +1797,8 @@ export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
       members.benThompson,
     ],
   },
-  pc1998: {
-    year: 1998,
+  pc1995: {
+    year: 1995,
     name: "Delta",
     members: [
       members.mikeClark,
@@ -1663,8 +1810,8 @@ export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
       members.mattZimmerman,
     ],
   },
-  pc1997: {
-    year: 1997,
+  pc1994: {
+    year: 1994,
     name: "Gamma",
     members: [
       members.andyArana,
@@ -1687,8 +1834,8 @@ export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
       members.scottWilson,
     ],
   },
-  pc1996: {
-    year: 1997,
+  pc1993: {
+    year: 1993,
     name: "Beta",
     members: [
       members.alexBlosser,
@@ -1703,8 +1850,8 @@ export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
       members.chrisVilla,
     ],
   },
-  pc1995: {
-    year: 1996,
+  pc1992: {
+    year: 1992,
     name: "Alpha",
     members: [
       members.johnAntiaco,
@@ -1734,10 +1881,6 @@ export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
 
 export const getMembers = (): Member[] => {
   return Object.values(members);
-};
-
-export const getExecutives = (): Member[] => {
-  return Object.values(members).filter((member) => member.positions.length > 0);
 };
 
 export const getPledgeClasses = (): PledgeClass[] => {

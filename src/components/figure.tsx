@@ -9,7 +9,7 @@ export interface FigureProps extends Omit<NextImageProps, "alt"> {
 const Figure: FunctionComponent<FigureProps> = ({ caption, ...rest }) => {
   return (
     <Stack as="figure" spacing={10}>
-      <Box rounded="md" overflow="hidden">
+      <Box rounded="md" overflow="hidden" shadow="sm">
         <NextImage alt={caption} {...rest} />
       </Box>
       <Text as="figcaption" align="center" color="grey" fontSize="sm">
