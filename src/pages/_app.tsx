@@ -1,10 +1,5 @@
 import type { AppProps } from "next/app";
-import {
-  ChakraProvider,
-  ChakraTheme,
-  extendTheme,
-  ThemeOverride,
-} from "@chakra-ui/react";
+import { ChakraProvider, extendTheme, ThemeOverride } from "@chakra-ui/react";
 import Layout from "../components/layout";
 
 const themeOverride: ThemeOverride = {

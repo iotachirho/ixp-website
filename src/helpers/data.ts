@@ -20,10 +20,6 @@ export interface PledgeClass {
   members: Member[];
 }
 
-// Macros:
-// a = member keys
-// b = member
-
 export type MembersKeys =
   | "kjGhast"
   | "joshAnaya"
@@ -1479,8 +1475,11 @@ export const members: { [key in MembersKeys]: Member } = {
   },
 };
 
-// It appears we are missing the Phi, Psi, and Alpha Beta classes. Given how the years align, it may be the case that Phi and Psi
-// were skipped over, but it should be the case that Alpha Beta existed, as there is currently a gap at 2015.
+/**
+ * It appears we are missing the Phi, Psi, and Alpha Beta classes. Given how the years align, it may be the case that Phi and Psi
+ * were skipped over, but it should be the case that Alpha Beta existed, as there is currently a gap at 2015.
+ */
+
 export type PledgeClassesKeys =
   | "pc2022"
   | "pc2021"
@@ -1882,10 +1881,6 @@ export const pledgeClasses: { [key in PledgeClassesKeys]: PledgeClass } = {
 
 export const getMembers = (): Member[] => {
   return Object.values(members);
-};
-
-export const getExecutives = (): Member[] => {
-  return Object.values(members).filter((member) => member.positions.length > 0);
 };
 
 export const getPledgeClasses = (): PledgeClass[] => {
