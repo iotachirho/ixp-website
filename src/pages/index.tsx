@@ -9,7 +9,7 @@ const Home: NextPage = () => {
     <>
       <SEO description="Iota Chi Rho is a men's social fraternity founded in 1992 at Trinity University in San Antonio, Texas. Iota Chi Rho, or IXP for short, lives up to its reputation as the alternative frat by offering Trinity students a unique take on fraternity life." />
       <Stack spacing={10}>
-        <Stack alignItems="center">
+        <Stack textAlign="center">
           <Heading fontSize="4xl">Iota Chi Rho</Heading>
           <Heading fontSize="xl" color="grey">
             Brotherhood, individuality, and friendship.
