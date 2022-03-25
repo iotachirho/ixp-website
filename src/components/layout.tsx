@@ -15,7 +15,7 @@ const Layout: FunctionComponent = ({ children }) => {
         <Container maxWidth="xl">
           <Stack as={Center}>
             <Stack direction="row" spacing={10}>
-              <NavigationLink color="green" href="/about">
+              <NavigationLink color="green" href="/">
                 ixp
               </NavigationLink>
               <NavigationLink href="/members">members</NavigationLink>

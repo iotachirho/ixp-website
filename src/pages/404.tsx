@@ -11,9 +11,9 @@ const CustomError: NextPage = () => {
         description="We were not able to find that page."
       />
       <Center paddingY={10}>
-        <Stack alignItems="center">
+        <Stack alignItems="center" spacing={10}>
           <Heading>Page Not Found</Heading>
-          <NavigationLink href="/">Go Back Home</NavigationLink>
+          <NavigationLink href="/">Learn About Iota Chi Rho</NavigationLink>
         </Stack>
       </Center>
     </>
