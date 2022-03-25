@@ -14,6 +14,7 @@ import { v4 as uuid } from "uuid";
 import Figure from "../components/figure";
 import SEO from "../components/seo";
 import { getPledgeClasses, PledgeClass } from "../helpers/data";
+import groupPhoto1996 from "../..//images/1996-group-photo.png";
 
 interface MembersPageProps {
   pledgeClasses: PledgeClass[];
@@ -37,7 +38,8 @@ const MembersPage: NextPage<MembersPageProps> = ({ pledgeClasses }) => {
           <Heading>Members</Heading>
         </Center>
         <Figure
-          src="/images/1996-group-photo.png"
+          src={groupPhoto1996}
+          placeholder="blur"
           caption="Active members of Iota Chi Rho, 1996."
           layout="responsive"
           objectFit="cover"
