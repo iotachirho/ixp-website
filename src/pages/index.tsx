@@ -2,6 +2,7 @@ import { Heading, Stack, Text } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Figure from "../components/figure";
 import SEO from "../components/seo";
+import groupPhoto from "../../public/images/group-photo.jpg";
 
 const Home: NextPage = () => {
   return (
@@ -15,7 +16,8 @@ const Home: NextPage = () => {
           </Heading>
         </Stack>
         <Figure
-          src="/images/group-photo.jpg"
+          src={groupPhoto}
+          placeholder="blur"
           caption="Current active class of Iota Chi Rho on bid day, 2022."
           layout="responsive"
           objectFit="cover"
