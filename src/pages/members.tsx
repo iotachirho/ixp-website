@@ -14,7 +14,7 @@ import { v4 as uuid } from "uuid";
 import Figure from "../components/figure";
 import SEO from "../components/seo";
 import { getPledgeClasses, PledgeClass } from "../helpers/data";
-import groupPhoto1996 from "../../images/1996-group-photo.png";
+import groupPhoto1996 from "../../public/images/1996-group-photo.png";
 
 interface MembersPageProps {
   pledgeClasses: PledgeClass[];
@@ -54,7 +54,7 @@ const MembersPage: NextPage<MembersPageProps> = ({ pledgeClasses }) => {
                 {pledgeClass.members.map((member) => (
                   <ListItem
                     key={uuid()}
-                    color={member.active ? "initial" : "blackAlpha.500"}
+                    color={member.active ? "primaryText" : "secondaryText"}
                   >
                     <Wrap>
                       <Text>{`${member.firstName} ${member.lastName}`}</Text>

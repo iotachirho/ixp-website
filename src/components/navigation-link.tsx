@@ -9,7 +9,7 @@ const NavigationLink: FunctionComponent<
   Omit<NextLinkProps & ChakraLinkProps, "passHref">
 > = ({ children, ...props }) => {
   const chakraLinkProps: ChakraLinkProps = {
-    color: "grey",
+    color: "secondaryText",
     fontWeight: "bold",
     fontSize: "lg",
     _hover: {

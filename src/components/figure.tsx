@@ -12,7 +12,7 @@ const Figure: FunctionComponent<FigureProps> = ({ caption, ...rest }) => {
       <Box rounded="md" overflow="hidden" shadow="sm">
         <NextImage alt={caption} {...rest} />
       </Box>
-      <Text as="figcaption" align="center" color="grey" fontSize="sm">
+      <Text as="figcaption" align="center" color="secondaryText" fontSize="sm">
         {caption}
       </Text>
     </Stack>
