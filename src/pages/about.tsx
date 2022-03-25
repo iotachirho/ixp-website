@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       </Stack>
       <Figure
         src="/images/group-photo.jpg"
-        caption="Active members of Iota Chi Rho as of 2020."
+        caption="Current active class of Iota Chi Rho on bid day, 2022."
         layout="responsive"
         objectFit="cover"
         width={500}
