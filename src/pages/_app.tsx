@@ -9,7 +9,26 @@ const themeOverride: ThemeOverride = {
         color: "green",
       },
     },
+
+    Text: {
+      baseStyle: {
+        color: "text",
+      },
+    },
   },
+  semanticTokens: {
+    colors: {
+      primaryText: {
+        default: "gray.900",
+        _dark: "gray.100",
+      },
+      secondaryText: {
+        default: "gray.600",
+        _dark: "gray.400",
+      },
+    },
+  },
+  config: { useSystemColorMode: true },
 };
 
 const CustomApp = ({ Component, pageProps }: AppProps) => {

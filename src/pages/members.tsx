@@ -54,7 +54,7 @@ const MembersPage: NextPage<MembersPageProps> = ({ pledgeClasses }) => {
                 {pledgeClass.members.map((member) => (
                   <ListItem
                     key={uuid()}
-                    color={member.active ? "initial" : "blackAlpha.500"}
+                    color={member.active ? "primaryText" : "secondaryText"}
                   >
                     <Wrap>
                       <Text>{`${member.firstName} ${member.lastName}`}</Text>

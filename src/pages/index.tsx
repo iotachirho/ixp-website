@@ -11,7 +11,7 @@ const Home: NextPage = () => {
       <Stack spacing={10}>
         <Stack textAlign="center">
           <Heading fontSize="4xl">Iota Chi Rho</Heading>
-          <Heading fontSize="xl" color="grey">
+          <Heading fontSize="xl" color="secondaryText">
             Brotherhood, individuality, and friendship.
           </Heading>
         </Stack>
