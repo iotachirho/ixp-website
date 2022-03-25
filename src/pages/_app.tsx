@@ -6,7 +6,7 @@ const themeOverride: ThemeOverride = {
   components: {
     Link: {
       baseStyle: {
-        color: "green",
+        color: "brand",
       },
     },
 
@@ -25,6 +25,10 @@ const themeOverride: ThemeOverride = {
       secondaryText: {
         default: "gray.600",
         _dark: "gray.400",
+      },
+      brand: {
+        default: "green.700",
+        _dark: "green.500",
       },
     },
   },

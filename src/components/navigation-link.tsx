@@ -13,7 +13,7 @@ const NavigationLink: FunctionComponent<
     fontWeight: "bold",
     fontSize: "lg",
     _hover: {
-      color: "green",
+      color: "brand",
     },
   };
 
