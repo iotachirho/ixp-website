@@ -9,7 +9,6 @@ const themeOverride: ThemeOverride = {
         color: "brand",
       },
     },
-
     Text: {
       baseStyle: {
         color: "text",
@@ -27,7 +26,7 @@ const themeOverride: ThemeOverride = {
         _dark: "gray.400",
       },
       brand: {
-        default: "green.700",
+        default: "green.600",
         _dark: "green.500",
       },
     },
