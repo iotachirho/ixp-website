@@ -10,7 +10,7 @@ const SEO: FunctionComponent<SEOProps> = ({ title, description }) => {
   return (
     <Head>
       <title>{title ? `${title} - Iota Chi Rho` : "Iota Chi Rho"}</title>
-      <meta property="description" content={description} />
+      <meta name="description" content={description} />
     </Head>
   );
 };

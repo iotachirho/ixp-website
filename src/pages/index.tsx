@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <Figure
           src={groupPhoto}
           placeholder="blur"
-          caption="Current active class of Iota Chi Rho on bid day, 2022."
+          caption="Current active class of Iota Chi Rho."
           layout="responsive"
           objectFit="cover"
           width={500}
