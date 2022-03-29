@@ -29,7 +29,7 @@ const themeOverride: ThemeOverride = {
       },
     },
   },
-  config: { useSystemColorMode: true, initialColorMode: "light" },
+  config: { initialColorMode: "system" },
 };
 
 const theme = extendTheme(themeOverride);
