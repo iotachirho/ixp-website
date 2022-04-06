@@ -9,7 +9,7 @@ const themeOverride: ThemeOverride = {
     },
     Text: {
       baseStyle: {
-        color: "text",
+        color: "primaryText",
       },
     },
   },
