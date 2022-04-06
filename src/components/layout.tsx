@@ -22,17 +22,13 @@ const Layout: FunctionComponent = ({ children }) => {
   return (
     <>
       <Center shadow="sm" padding={5}>
-        <Container maxWidth="xl">
-          <Stack as={Center}>
-            <Stack direction="row" spacing={10}>
-              <NavigationLink color="brand" href="/">
-                ixp
-              </NavigationLink>
-              <NavigationLink href="/members">members</NavigationLink>
-              <NavigationLink href="/join">join</NavigationLink>
-            </Stack>
-          </Stack>
-        </Container>
+        <Stack direction="row" spacing={10}>
+          <NavigationLink color="brand" href="/">
+            ixp
+          </NavigationLink>
+          <NavigationLink href="/members">members</NavigationLink>
+          <NavigationLink href="/join">join</NavigationLink>
+        </Stack>
       </Center>
       <Container maxWidth="5xl" marginY={10}>
         {children}
@@ -73,7 +69,6 @@ const Layout: FunctionComponent = ({ children }) => {
               <Icon aria-label="Email" as={AiTwotoneMail} />
             </Link>
           </Stack>
-
           <Button onClick={() => toggleColorMode()} size="sm">
             Toggle Color Mode
           </Button>
