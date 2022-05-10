@@ -47,14 +47,6 @@ const Layout: FunctionComponent = ({ children }) => {
             <Link
               padding={2}
               color="secondaryText"
-              href="https://twitter.com/iotachirho"
-              isExternal
-            >
-              <Icon aria-label="Twitter" as={FaTwitterSquare} />
-            </Link>
-            <Link
-              padding={2}
-              color="secondaryText"
               href="https://www.instagram.com/iotachirho/"
               isExternal
             >
